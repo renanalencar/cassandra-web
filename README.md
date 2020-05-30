@@ -48,8 +48,12 @@ bundle exec cassandra-web
 
 ### Connect to a Cassandra Cluster requiring authentication
 
-```bash
+<!-- ```bash
 cassandra-web --hosts '10.0.2.2' --port '9042' --username 'cassweb' --password 'myPassword'
+``` -->
+
+```bash
+bundle exec cassandra-web --hosts '10.0.2.2' --port '9042' --username 'cassweb' --password 'myPassword'
 ```
 
 ## How it works
