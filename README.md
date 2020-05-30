@@ -4,24 +4,46 @@ A web interface to Apache Cassandra with AngularJS and server-sent events.
 
 ## Installation
 
-```bash
+<!-- ```bash
 gem install cassandra-web
-```
+``` -->
+
 ### On Windows
+
 You have to uninstall gem eventmachine 1.2.7 (x64-mingw32) if you are using Ruby 2.2 or later due to incompability.
 
 ```bash
+gem install bundler:2.1.4
+bundle install
 gem uninstall eventmachine
+gem install eventmachine --platform ruby
 ```
+
+<!-- ## Uninstallation
+
+### On Windows
+
+```bash
+gem uninstall cassandra-web sinatra thin tilt rack-cors rack-parser cassandra-driver rake rack eventmachine
+gem cleanup
+``` -->
 
 ## Usage
 
-Run `cassandra-web -h` for help.
+<!-- Run `cassandra-web -h` for help. -->
+
+Run `bundle exec cassandra-web -h` for help.
 
 ### Quick Start
 
-```bash
+<!-- ```bash
 cassandra-web
+``` -->
+
+### On Windows
+
+```bash
+bundle exec cassandra-web
 ```
 
 ### Connect to a Cassandra Cluster requiring authentication
@@ -29,10 +51,6 @@ cassandra-web
 ```bash
 cassandra-web --hosts '10.0.2.2' --port '9042' --username 'cassweb' --password 'myPassword'
 ```
-
-
-
-
 
 ## How it works
 

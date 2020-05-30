@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cassandra-web (0.5.0)
+    cassandra-web (0.5.1)
       cassandra-driver (~> 3.2.4)
       rack-cors (~> 1.1.1)
       rack-parser (~> 0.7.0)
@@ -19,6 +19,7 @@ GEM
     eventmachine (1.2.7)
     eventmachine (1.2.7-java)
     eventmachine (1.2.7-x64-mingw32)
+    extlz4 (0.3)
     ione (1.2.4)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
@@ -49,8 +50,15 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.1.4)
+  cassandra-driver (~> 3.2.4)
   cassandra-web!
+  eventmachine (~> 1.2.7)
+  extlz4 (~> 0.3)
+  rack-cors (~> 1.1.1)
+  rack-parser (~> 0.7.0)
   rake (~> 13.0.1)
+  sinatra (~> 2.0.8)
+  thin (~> 1.7.2)
 
 BUNDLED WITH
    2.1.4

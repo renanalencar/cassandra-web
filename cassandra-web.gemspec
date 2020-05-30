@@ -4,11 +4,11 @@ $: << File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |s|
   s.name          = 'cassandra-web'
-  s.version       = '0.5.0'
-  s.authors       = ['Bulat Shakirzyanov']
-  s.email         = ['bulat.shakirzyanov@datastax.com']
-  s.homepage      = 'https://github.com/avalanche123/cassandra-web'
-  s.summary       = %q{A simple web ui for Apache Cassandra}
+  s.version       = '0.5.1'
+  s.authors       = ['Renan Alencar', 'Bulat Shakirzyanov']
+  s.email         = ['renanalencar@renanalencar.eng.br', 'bulat.shakirzyanov@datastax.com']
+  s.homepage      = 'https://github.com/renanalencar/cassandra-web'
+  s.summary       = %q{A forked version of cassandra-web}
   s.description   = %q{Apache Cassandra web interface using Ruby, Event-machine, AngularJS, Server-Sent-Events and DataStax Ruby driver for Apache Cassandra}
   s.license       = 'MIT'
   s.files         = Dir['app/**/*.*', 'app.rb', 'README.md', 'bin/*']
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.executables << 'cassandra-web'
 
   s.required_ruby_version = '>= 2.2.0'
-  s.platform= Gem::Platform::RUBY
+  # s.platform= Gem::Platform::RUBY
 
   s.add_runtime_dependency 'cassandra-driver', '~> 3.2.4'
   s.add_runtime_dependency 'thin',             '~> 1.7.2'
