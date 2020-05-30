@@ -7,6 +7,12 @@ A web interface to Apache Cassandra with AngularJS and server-sent events.
 ```bash
 gem install cassandra-web
 ```
+### On Windows
+You have to uninstall gem eventmachine 1.2.7 (x64-mingw32) if you are using Ruby 2.2 or later due to incompability.
+
+```bash
+gem uninstall eventmachine
+```
 
 ## Usage
 
