@@ -40,8 +40,6 @@ Run `bundle exec cassandra-web -h` for help.
 cassandra-web
 ``` -->
 
-#### On Windows
-
 ```bash
 bundle exec cassandra-web
 ```
